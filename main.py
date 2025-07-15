@@ -1,18 +1,24 @@
-import matplotlib.pyplot as plt
+from module import Human
 
-# 데이터 준비
-x = [1, 2, 3, 4, 5]
-y = [2, 4, 6, 8, 10]
+class_ai = [
+    Human("김민서", 23, "Male"),
+    Human("이지한", 17, "Male"),
+    Human("노지완", 17, "Male"),
+    Human("김시헌", 17, "Male"),
+    Human("유채민", 17, "Female"),
+    Human("이송민", 17, "Male"),
+    Human("장준민", 17, "Male"),
+    Human("김재원", 17, "Male"),
+    Human("김재원", 17, "Male"),
+    Human("임현서", 17, "Male"),
+    Human("이재빈", 17, "Male"),
+    Human("권태욱", 17, "Male"),
+    Human("이동현", 17, "Male"),
+    Human("임주원", 17, "Male"),
+    Human("김성현", 17, "Male"),
+    Human("강은성", 17, "Female"),
+]
 
-# 그래프 그리기
-plt.plot(x, y, label='y = 2x', color='blue', marker='o')
 
-# 제목과 라벨
-plt.title('기본 선 그래프')
-plt.xlabel('x 값')
-plt.ylabel('y 값')
-plt.legend()  # 범례 표시
-
-# 그래프 출력
-plt.grid(True)
-plt.show()
+for student in class_ai:
+    student.say_hello()
